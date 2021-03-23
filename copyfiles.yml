@@ -1,0 +1,18 @@
+- hosts: all
+  tasks:
+  - copy:
+          dest: "/etc/yum.repos.d"
+          src: "/etc/yum.repos.d/epel-modular.repo"
+  - copy:
+          dest: "/etc/yum.repos.d"
+          src: "/etc/yum.repos.d/epel-playground.repo"
+  - copy:
+          dest: "/etc/yum.repos.d"
+          src: "/etc/yum.repos.d/rpmfusion-free-updates.repo"
+  - copy:
+          dest: "/etc/yum.repos.d"
+          src: "/etc/yum.repos.d/epel-testing.repo"
+  - copy:
+          dest: "/etc/yum.repos.d"
+          src: "/etc/yum.repos.d/pmfusion-free-updates-testing.repo"
+        
