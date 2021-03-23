@@ -15,4 +15,10 @@
   - copy:
           dest: "/etc/yum.repos.d"
           src: "rpmfusion-free-updates-testing.repo"
-        
+          
+   - copy:
+          dest: "/etc/yum.repos.d"
+          src: "epel-testing-modular.repo"
+   - copy:
+          dest: "/etc/yum.repos.d"
+          src: "epel.repo"       
